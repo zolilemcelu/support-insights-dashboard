@@ -10,6 +10,18 @@ Support operations and Development insights.
 
 ---
 
+## 🎯 Why this project?
+
+At Afrihost Support, I noticed how much insight was hidden inside tickets, cancellations, and call logs.
+
+**This dashboard was built to:**
+
+- Turn Support pain points into measurable KPIs.
+- Give Dev teams clear visibility on themes and root causes.
+- Create a foundation for future automation & reporting pipelines.
+
+---
+
 ## 🚀 Features
 
 - **KPI Cards** – Total queries, **First Contact Resolution %**, and **Avg time-to-resolve**  
@@ -57,36 +69,74 @@ Support operations and Development insights.
    git clone https://github.com/zolilemcelu/support-insights-dashboard.git
    cd support-insights-dashboard
 
-Install dependencies
-
+2. **Install dependencies**
+```bash
 composer install
+```
 
+3. **Set up database connection**
+Copy .env → .env.local
+
+**Update:**
+```bash
+DATABASE_URL="mysql://root:@127.0.0.1:3306/support_queries?serverVersion=10.4&charset=utf8mb4"
+```
+
+4. **Run migrations (if any)**
+```bash
+php bin/console doctrine:migrations:migrate
+```
+
+4. **Start the local server**
+```bash
+symfony server:start
+```
+
+---
+
+## 📂 Docs Included
+
+```bash
+docs/dashboard-*.png → Screenshots
+```
+```bash
+docs/support_queries.sql → MySQL schema & seed data
+```
+```bash
+docs/support_queries_sample.csv → Example dataset
+```
 
 Configure environment
+
 Copy .env → .env.local and update with your MySQL credentials:
-
+```bash
 DATABASE_URL="mysql://root:@127.0.0.1:3306/support_queries?serverVersion=10.4&charset=utf8mb4"
+```
 
 
-Start the Symfony server
-
+**Start the Symfony server**
+```bash
 symfony server:start
+```
 
 
-Visit the dashboard
+**Visit the dashboard**
 
 http://127.0.0.1:8000/support/reports
 
-📥 CSV Import
+---
+
+## 📥 CSV Import
 
 To load fresh support data into MySQL:
-
+```bash
 php bin/console app:import-csv support_queries.csv
+```
 
-
-Expected headers:
-
+**Expected headers:**
+```bash
 query_date,id_number,client_name,call_id,product,query_type,ticket_id,reason_verbatim,reason_normalized,category,action_taken,first_contact_resolution,time_to_resolve,complaint_theme,mojo_notes,mojo_account,notes,in_period
+```
 
 📄 License
 
@@ -109,5 +159,3 @@ This version:
 - ✅ Adds **license & credits**  
 
 ---
-
-Would you like me to also **show you the exact git commands** to commit this new README and push it to 
