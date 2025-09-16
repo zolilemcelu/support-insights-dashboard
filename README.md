@@ -17,7 +17,7 @@ At Afrihost Support, I noticed how much insight was hidden inside tickets, cance
 **This dashboard was built to:**
 
 - Turn Support pain points into measurable KPIs.
-- Give Dev teams clear visibility on themes and root causes.
+- Give Support teams clear visibility on themes and root causes.
 - Create a foundation for future automation & reporting pipelines.
 
 ---
