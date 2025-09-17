@@ -36,6 +36,7 @@ At Afrihost Support, I noticed how much insight was hidden inside tickets, cance
 ## 📸 Screenshots
 
 **Dashboard Overview**  
+
 ![Support Report](docs/dashboard-support-report.png)
 
 **Category Split**  
