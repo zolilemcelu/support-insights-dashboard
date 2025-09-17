@@ -40,15 +40,19 @@ At Afrihost Support, I noticed how much insight was hidden inside tickets, cance
 ![Support Report](docs/dashboard-support-report.png)
 
 **Category Split**  
+
 ![Category Split](docs/dashboard-split.png)
 
 **Top 10 Complaint Themes**  
+
 ![Top 10 Themes](docs/dashboard-top-10-themes.png)
 
 **KPI Cards**  
+
 ![KPI Cards](docs/dashboard-kpis.png)
 
 **All Products View**  
+
 ![All Products](docs/dashboard-all-products.png)
 
 ---
